@@ -1,6 +1,6 @@
 # PrestaShop Playwright E2E Test Suite
 
-End-to-end (E2E) test automation for the PrestaShop demo using Playwright and the Page Object Model (POM).
+End-to-end (E2E) test automation for the PrestaShop demo using Playwright and the Page Object Model.
 
 ## Prerequisites
 
@@ -39,7 +39,7 @@ PrestaShop-Playwright/
 - `playwright-report/` — Playwright HTML report
 - `tests/` — Test files
 - `utils/` — Test data utilities
-- `package.json`, `package-lock.json` — Project manifest and lockfile
+- `package.json`, `package-lock.json` — package/dependency management
 - `playwright.config.js` — Playwright configuration
 - `README.md` — Project documentation
 
@@ -78,7 +78,7 @@ npx playwright show-report
 ## Notes
 
 - Registration test generates credentials in `fixtures/registeredUser.json`.
-- Each test has a global timeout of 60 seconds (see `playwright.config.js`).
+- Each test has a global timeout of 60 seconds (in `playwright.config.js`).
 
 ## Troubleshooting
 
