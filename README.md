@@ -54,7 +54,7 @@ npx playwright install
 
 ## Running Tests
 
-- Run all tests (default: Chromium):
+- Run all tests:
   ```bash
   npx playwright test
   ```
@@ -97,4 +97,4 @@ npx playwright show-report
 - The failure occurs because I’m unable to log in and verify that the “Sign Out” link is visible. This may be due to the PrestaShop demo site frequently resetting its data for each new browser instance. Even after registering manually and logging in, the behavior is inconsistent—sometimes it works for a while, but other times it immediately shows “Authentication Failed.”
 
 - **E2E Product Purchase flow failing**
-- The failure is due to the "Place order" button being disabled during the test run.
+- The failure occurs because the 'Place Order' button is disabled during the test run. Even when attempting a manual product purchase, the 'Place Order' button remains disabled, preventing the product purchase.
